@@ -1,0 +1,17 @@
+.section_title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section_title p {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: var(--navbar-bg);
+}
+
+.section_title h2 {
+  font-size: 35px;
+  color: var(--section-color);
+}

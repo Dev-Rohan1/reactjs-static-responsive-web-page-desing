@@ -1,0 +1,70 @@
+.program-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.program-cards .program-card {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  transition: 0.5s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.program-cards .program-card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.5s ease;
+}
+
+.program-cards .program-card .caption {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  padding-top: 70%;
+  transition: 0.3s;
+}
+
+.program-cards .program-card .caption img {
+  width: 60px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.program-cards .program-card:hover img {
+  transform: scale(1.07);
+}
+
+.program-cards .program-card .caption span {
+  color: var(--navbar-color);
+  margin-top: 15px;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.program-cards .program-card:hover .caption {
+  background-color: #000f984d;
+  padding: 0%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.program-cards .program-card:hover .caption img,
+.program-cards .program-card:hover .caption span {
+  opacity: 1;
+}
+
+.program-cards .program-card:hover .caption img {
+  transform: scale(1) !important;
+  border-radius: none;
+}
